@@ -12,7 +12,7 @@ process.on("uncaughtException", (err) => {
 //config
 require("dotenv").config({ path: "backend/config/config.env" });
 
-//connectign to database
+//connection to database
 connectDatabase();
 
 const server = app.listen(4000, () => {

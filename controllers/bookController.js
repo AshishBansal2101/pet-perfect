@@ -40,7 +40,7 @@ exports.getBookDetails = catchAsyncErrors(async (req, res, next) => {
   });
 });
 
-// //Update Book
+//Update Book
 
 exports.updateBook = catchAsyncErrors(async (req, res, next) => {
   let book = await Book.findById(req.params.id);

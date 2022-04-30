@@ -111,7 +111,6 @@ exports.getSingleUser = catchAsyncErrors(async (req, res, next) => {
 // Delete User
 exports.deleteUser = catchAsyncErrors(async (req, res, next) => {
   const user = await User.findById(req.params.id);
-  //we will remove cloudinary later
 
   if (!user) {
     return next(
