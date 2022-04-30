@@ -8,7 +8,7 @@ var faker = require("faker");
 var fakerModel = require("./models/authorModel");
 
 dotenv.config({ path: process.cwd() + "/config/config.env" });
-console.log(process.env.PORT);
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
